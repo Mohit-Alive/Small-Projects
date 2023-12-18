@@ -1,0 +1,44 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#button{
+    display: none;
+}
+
+label{
+    width: 200px;
+    height: 100px;
+    background: lightgray;
+    position: relative;
+    border-radius: 50px;
+    transition: 0.5s all ease;
+}
+
+label::before{
+    position: absolute;
+    content: "";
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 0.5s all ease;
+
+}
+
+#button:checked  + label{
+    background-color: navy;
+}
+
+#button:checked  + label::before{
+    transform: translatex(100px);
+}
