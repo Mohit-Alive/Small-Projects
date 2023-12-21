@@ -31,8 +31,6 @@ html,body{
     text-align: center;
     line-height: 100px;
     border-radius: 15px 15px 0 0;
-    /* background: linear-gradient(-135deg,#c850c0,#4158d0); */
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,35,1) 35%, rgba(0,212,255,1) 100%); */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
@@ -88,9 +86,7 @@ html,body{
 }
 
 .page form .field input[type="submit"]{
-    /* background: linear-gradient(-135deg,#c850c0,#4158d0); */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,35,1) 35%, rgba(0,212,255,1) 100%); */
     color: #fff;
     font-size: 18px;
     font-weight: 500;
