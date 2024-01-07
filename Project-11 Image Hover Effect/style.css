@@ -1,0 +1,49 @@
+body {
+    padding: 150px;
+    background-color: rgb(37, 37, 37);
+}
+
+.image {
+    margin-top: 20px;
+    width: 10%;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.image img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    animation: all ease 0.4;
+}
+
+.image img:hover {
+    width: 100%;
+}
+
+.pics {
+    margin-top: 100px;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+}
+
+.pics img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.5s;
+
+}
+
+.pics img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
