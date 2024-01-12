@@ -1,0 +1,35 @@
+:root {
+    --white: white;
+    --black: black;
+}
+
+.dark-theme {
+    --white: rgb(30, 29, 29);
+    --black: rgb(167, 34, 250);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    width: 50px;
+}
+
+.text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text h1 {
+    color: var(--black);
+}
