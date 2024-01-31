@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-color: #f2f2f2;
+}
+
+.page{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 380px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.page .title{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.page form{
+    padding: 10px 30px 50px 30px;
+}
+
+.page form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.page form .field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 17px;
+    border: 1px solid lightgray;
+}
+
+.page form .field input:focus,
+.page form .field input:valid{
+    border-color: #4158d0;
+}
+
+.page form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 17px;
+    color: #999;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.page form .field input:focus ~ label,
+.page form .field input:valid ~ label{
+    top: 0%;
+    color: #4158d0;
+    background: #fff;
+    font-size: 16px;
+    transform: translateY(-50%);
+}
+
+.page form .forgot{
+    color: #4158d0;
+    margin: 8px 0 0 10px;
+}
+
+.page form .field input[type="submit"]{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding-left: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page form .field input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+form .signup{
+    color: #262626;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form .signup a,
+form .forgot a{
+    color: #4158d0;
+    text-decoration: none;
+}
+
+form .signup a:hover,
+form .forgot a:hover{
+    text-decoration: underline;
+}
